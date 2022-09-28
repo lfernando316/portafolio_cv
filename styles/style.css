@@ -155,10 +155,11 @@ img {
 .home{
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   align-items: flex-start;
   padding: 3rem;
   max-width: 1320px;
+  min-height: 100vh;
   margin: 0 auto;
   background-image: url(/assets/img/Lovepik_com-401428856-polygonal-line-light-effect-background.png);
   background-size: cover;
