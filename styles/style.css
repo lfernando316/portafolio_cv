@@ -130,7 +130,7 @@ img {
 }
 
 .wrapper {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 /* désde 500px, 500 ... */
@@ -158,7 +158,7 @@ img {
   justify-content: center;
   align-items: flex-start;
   padding: 3rem;
-  max-width: 1320px;
+  max-width: 1720px;
   min-height: 100vh;
   margin: 0 auto;
   background-image: url(/assets/img/Lovepik_com-401428856-polygonal-line-light-effect-background.png);
@@ -248,7 +248,7 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0rem 3rem;
-  max-width: 1320px;
+  max-width: 1720px;
   margin: 0 auto;
 }
 .about__box{
@@ -303,7 +303,7 @@ img {
   align-items: center;
   flex-direction: column;
   padding: 0rem 3rem;
-  max-width: 1320px;
+  max-width: 1720px;
   margin: 0 auto;
 }
 .container__cards{
@@ -316,6 +316,7 @@ img {
 .habilities__title{
   font-size: 5rem;
   color: #fff;
+  margin-bottom: 15px;
 }
 .card__habilities{
   display: flex;
@@ -351,6 +352,7 @@ img {
   padding: 0px;
   margin-top: 5px;
   color: #08fdd8;
+  word-wrap: break-word ;
 }
 .card__link{
   text-decoration: none;
@@ -379,15 +381,152 @@ img {
 }
 /* portfolio */
 .portfolio{
-  max-width: 1320px;
+  max-width: 1720px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.portfolio__title{
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.card__box-portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;    
+}
+
+.card div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+.card .front {
+  background: #1d1d1d;
+  -webkit-box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 4px -1pxrgba(0,0,0,0.2),0 4px 5px 0rgba(0,0,0,0.14),0 1px 10px 0rgba(0,0,0,0.12);
+    border-top: 2px solid #e4ee89;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  transform: perspective(500px) rotateY(0deg);
+}
+.port__title{
+  color: #08fdd8;
+}
+.img__port{
+  width: 280px;
+  height: 268px;
+}
+.port__description{
+  text-align: justify;
+  color: #08fdd8;
+}
+.card .back {
+  background: #e4ee89;
+  display: flex;
+  gap: 3rem;
+  font-size: 5rem;
+  transform: perspective(500px) rotateY(180deg);
+}
+.link__port{
+  text-decoration: none;
+  text-align: center;
+}
+.icon-port{
+  color: #08fdd8;
+}
+.subtitle__port{
+  font-size: 1rem;
+  color: #1d1d1d;
+}
+.card:hover .front {
+  transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .back {
+  transform: perspective(500px) rotateY(360deg);
+}
+.card div h1 {
+  font-size: 100px;
+  color: #f1f1f1;
+}
+
+
+
+
+/* .card__portfolio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  border-color: #08fdd8;
+  background: #1d1d1d;
+    -webkit-box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 4px -1pxrgba(0,0,0,0.2),0 4px 5px 0rgba(0,0,0,0.14),0 1px 10px 0rgba(0,0,0,0.12);
+    border-top: 2px solid #e4ee89;
+    transition: transform 100ms ease;
+}
+.card_box-img{
+  width: 250px;
+  height: 150px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.card__img{
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  overflow: hidden;
+  object-fit: cover;
+  
+}
+.card__img:hover{
+  transform: scale(1.2);
+}
+.card__p{
+  color: #fff;
+  padding: 10px;
+  text-align: justify;
+  width: 200px;
+}
+.box__links{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box__second{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subt{
+  font-size: 0.8rem;
+} */
 /* contacto */
 .contact{
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  max-width: 1320px;
+  max-width: 1720px;
   margin: 0 auto;
   padding: 0px 3rem;
   gap: 3rem;
