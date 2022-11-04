@@ -1,6 +1,7 @@
 html {
   font-size: 16px;
   font-weight: 400;
+  font-family: 'Urbanist', sans-serif;
   line-height: 1.5;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -19,7 +20,8 @@ h1,h2,h3,p{
 
 body {
   margin: 0;
-  background-color: #1d1d1d;
+  /* background-color: #1d1d1d; */
+  background-image: radial-gradient(circle at 50% -20.71%, #194046 0, #1c3a3d 10%, #1e3435 20%, #1f2d2c 30%, #1e2524 40%, #1d1d1d 50%, #1b1517 60%, #180b12 70%, #15000e 80%, #10000a 90%, #090008 100%);
 }
 
 img {
@@ -86,6 +88,8 @@ img {
 .navbar__list {
   display: flex;
   gap: .5rem;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .navbar__button {
@@ -169,7 +173,9 @@ img {
 
 .home__title{
   color: #ffffff;
+  font-family: 'Urbanist', sans-serif;
   font-size: 5rem;
+  font-weight: 700;
   line-height: 4.5rem;
 }
 
@@ -229,6 +235,66 @@ img {
 .style-btn:hover{
   background-position: 0;
 }
+
+/* h1::before{
+  content: '<h1>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 1.5rem;
+    position: absolute;
+    margin-top: -3rem;
+    left: 2.5rem;
+}
+h1::after{
+  content: '<h1>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 1.5rem;
+   /*  position: absolute;
+    margin-top: 2rem;
+    left: 15.5rem; 
+}*/
+
+.shake:hover {
+  background: linear-gradient(90deg, #08fdd8, #e4ee89);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: shake 2s ease infinite;
+  }
+  @keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {transform: translateX(10px);}
+  }
+  
+#particles-js{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+  
+
+
+.tagh2::before{
+  content: '<p>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 1rem;
+    position: absolute;
+    margin-top: -1.1rem;
+    left: 2.5rem;
+}
+.tagp::after{
+  content: '<p>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 1rem;
+    position: absolute;
+    margin-top: 1.7rem;
+    left: 2.5rem;
+}
+
 
 /* vista mobile home */
 @media (max-width: 400px) {

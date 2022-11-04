@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Urbanist:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link
       rel="shortcut icon"
       href="./assets/img/favicon.png"
@@ -21,6 +31,7 @@
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
+    <div id="particles-js"></div>
     <header class="navbar">
       <div class="navbar__container">
         <div class="navbar__logo">
@@ -44,16 +55,22 @@
         </div>
       </div>
     </header>
-
     <main class="wrapper">
       <section id="home" class="home">
-        <h1 class="home__title">
-          Hola,<br />
+        <h1 class="home__title shake wow animate__animated animate__delay-1s">
+          Hola,
+          <br />
           soy Luis Fernando,<br />
           Desarrollador full stack
         </h1>
-        <h2 class="home__subtitle">Front end &amp; Back end Developer</h2>
-        <div class="home__box-icon">
+        <h2
+          class="home__subtitle wow animate__animated animate__jello animate__delay-1s"
+        >
+          Front end &amp; Back end Developer
+        </h2>
+        <div
+          class="home__box-icon wow animate__animated animate__swing animate__delay-1s"
+        >
           <a
             class="home__icon"
             href="https://www.linkedin.com/in/luis-fernando-salcedo/"
@@ -69,11 +86,16 @@
         </div>
         <a href="#contact"><button class="btn style-btn">CONTACTAME</button></a>
       </section>
-
       <section id="about" class="about">
         <div class="about__box">
-          <h2 class="about__title">Sobre mi</h2>
-          <p class="about__p">
+          <h2
+            class="about__title wow animate__animated animate__rotateInDownLeft animate__delay-1s"
+          >
+            Sobre mi
+          </h2>
+          <p
+            class="about__p wow animate__animated animate__lightSpeedInLeft animate__delay-1s"
+          >
             Desarrollador web con conocimientos del frontend y backend. estoy
             motivado y en constante aprendizaje de nuevas tecnologías. con
             intenciones de usar mis habilidades y pasión para impulsar la misión
@@ -89,15 +111,18 @@
         </div>
         <div class="about__box-img">
           <img
-            class="img__about"
+            class="img__about wow animate__animated animate__jackInTheBox animate__delay-1s"
             src="./assets/img/photo.png"
             alt="selfie luis fernando"
           />
         </div>
       </section>
-
       <section id="habilities" class="habilities">
-        <h2 class="habilities__title">Mis Habilidades</h2>
+        <h2
+          class="habilities__title wow animate__animated animate__rotateInDownLeft animate__delay-1s"
+        >
+          Mis Habilidades
+        </h2>
         <div class="container__cards">
           <div class="card__habilities">
             <h2 class="card__title">HTML5</h2>
@@ -200,7 +225,11 @@
         </div>
       </section>
       <section id="portfolio" class="portfolio">
-        <h2 class="portfolio__title">Portafolio</h2>
+        <h2
+          class="portfolio__title wow animate__animated animate__rotateInDownLeft animate__delay-1s"
+        >
+          Portafolio
+        </h2>
         <div class="card__box-portfolio">
           <div class="card">
             <div class="front">
@@ -384,7 +413,11 @@
       </section>
       <section id="contact" class="contact">
         <div class="container__form">
-          <h2 class="form__title">Contactame para conocerme</h2>
+          <h2
+            class="form__title wow animate__animated animate__rotateInDownLeft animate__delay-1s"
+          >
+            Contactame para conocerme
+          </h2>
           <p class="form__msg">
             Escríbeme si deseas contactarme, si tienes algún proyecto en mente o
             alguna inquietud, no dudes en llenar este formulario. estoy
@@ -394,7 +427,7 @@
           <form
             action="https://formsubmit.co/luiz_fernando316@hotmail.com"
             method="POST"
-            class="form"
+            class="form wow animate__animated animate__slideInUp"
           >
             <label class="form__item1" for=""
               ><input type="text" name="username" placeholder="Nombre" />
@@ -421,7 +454,9 @@
             />
           </form>
         </div>
-        <div class="container__datas">
+        <div
+          class="container__datas wow animate__animated animate__zoomInRight animate__delay-1s"
+        >
           <p class="data__info">
             <i class="bi bi-envelope-fill box"></i
             ><strong class="data__strong"> Correo: </strong
@@ -443,5 +478,12 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"></script>
     <script src="./js.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- js particles.js -->
+    <script src="/assets/js/particles.min.js"></script>
+    <script src="/assets/js/appParticles.js"></script>
   </body>
 </html>
