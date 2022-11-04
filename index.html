@@ -43,11 +43,21 @@
         <div id="menu" class="navbar__menu">
           <i id="btnClose" class="bx bx-x navbar__icon btn--close"></i>
           <nav class="navbar__list">
-            <a class="navbar__link" href="#home">Home</a>
-            <a class="navbar__link" href="#about">Sobre mí</a>
-            <a class="navbar__link" href="#habilities">Habilidades</a>
-            <a class="navbar__link" href="#portfolio">Portafolio</a>
-            <a class="navbar__link" href="#contact">Contacto</a>
+            <a class="navbar__link hvr-underline-from-left" href="#home"
+              >Home</a
+            >
+            <a class="navbar__link hvr-underline-from-left" href="#about"
+              >Sobre mí</a
+            >
+            <a class="navbar__link hvr-underline-from-left" href="#habilities"
+              >Habilidades</a
+            >
+            <a class="navbar__link hvr-underline-from-left" href="#portfolio"
+              >Portafolio</a
+            >
+            <a class="navbar__link hvr-underline-from-left" href="#contact"
+              >Contacto</a
+            >
           </nav>
         </div>
         <div class="navbar__button">
@@ -57,7 +67,7 @@
     </header>
     <main class="wrapper">
       <section id="home" class="home">
-        <h1 class="home__title shake wow animate__animated animate__delay-1s">
+        <h1 class="home__title bkmove">
           Hola,
           <br />
           soy Luis Fernando,<br />
@@ -89,7 +99,7 @@
       <section id="about" class="about">
         <div class="about__box">
           <h2
-            class="about__title wow animate__animated animate__rotateInDownLeft animate__delay-1s"
+            class="about__title wow animate__animated animate__rotateInDownLeft animate__delay-1s textgradient"
           >
             Sobre mi
           </h2>
@@ -119,7 +129,7 @@
       </section>
       <section id="habilities" class="habilities">
         <h2
-          class="habilities__title wow animate__animated animate__rotateInDownLeft animate__delay-1s"
+          class="habilities__title wow animate__animated animate__rotateInDownLeft animate__delay-1s textgradient"
         >
           Mis Habilidades
         </h2>
@@ -141,6 +151,14 @@
                   >Academlo</a
                 >
               </li>
+              <li class="card__item">
+                <a
+                  class="card__link"
+                  href="https://www.coderhouse.com.co/certificados/634e0c8b34032a000fb369b0"
+                  target="_blank"
+                  >CoderHouse</a
+                >
+              </li>
             </ul>
           </div>
           <div class="card__habilities">
@@ -158,6 +176,14 @@
                   href="https://certificates.academlo.com/en/verify/46383778368962"
                   target="_blank"
                   >Academlo</a
+                >
+              </li>
+              <li class="card__item">
+                <a
+                  class="card__link"
+                  href="https://www.coderhouse.com.co/certificados/634e0c8b34032a000fb369b0"
+                  target="_blank"
+                  >CoderHouse</a
                 >
               </li>
             </ul>
@@ -191,7 +217,12 @@
             <h3 class="card__subtitle">Certificados:</h3>
             <ul class="card__list">
               <li class="card__item">
-                <a class="card__link" href="" target="_blank">Academlo</a>
+                <a
+                  class="card__link"
+                  href="https://certificates.academlo.com/en/verify/76068516161180"
+                  target="_blank"
+                  >Academlo</a
+                >
               </li>
             </ul>
           </div>
@@ -226,11 +257,47 @@
       </section>
       <section id="portfolio" class="portfolio">
         <h2
-          class="portfolio__title wow animate__animated animate__rotateInDownLeft animate__delay-1s"
+          class="portfolio__title wow animate__animated animate__rotateInDownLeft animate__delay-1s textgradient"
         >
           Portafolio
         </h2>
         <div class="card__box-portfolio">
+          <div class="card">
+            <div class="front">
+              <h2 class="port__title">Poke App</h2>
+              <img
+                class="img__port"
+                src="./assets/img/pokeapp.png"
+                alt="screenshot de la aplicacion"
+              />
+              <p class="port__description">
+                APlicacion hecha con React router y Redux consumiendo la API de
+                pokemon
+              </p>
+            </div>
+            <div class="back">
+              <a
+                class="link__port"
+                href="https://pokeapplfsr.netlify.app"
+                target="_blank"
+                ><i class="bi bi-browser-chrome icon-port"></i>
+                <h2 class="subtitle__port">
+                  Desplegar <br />
+                  proyecto
+                </h2></a
+              >
+              <a
+                class="link__port"
+                href="https://github.com/lfernando316/pokeApp"
+                target="_blank"
+                ><i class="bi bi-github icon-port"></i>
+                <h2 class="subtitle__port">
+                  Abrir <br />
+                  codigo
+                </h2></a
+              >
+            </div>
+          </div>
           <div class="card">
             <div class="front">
               <h2 class="port__title">App Rick and Morty</h2>
@@ -414,7 +481,7 @@
       <section id="contact" class="contact">
         <div class="container__form">
           <h2
-            class="form__title wow animate__animated animate__rotateInDownLeft animate__delay-1s"
+            class="form__title wow animate__animated animate__rotateInDownLeft animate__delay-1s textgradient"
           >
             Contactame para conocerme
           </h2>
@@ -457,19 +524,27 @@
         <div
           class="container__datas wow animate__animated animate__zoomInRight animate__delay-1s"
         >
-          <p class="data__info">
+          <a
+            target="_blank"
+            href="mailto: luiz_fernando316@hotmail.com"
+            class="data__info"
+          >
             <i class="bi bi-envelope-fill box"></i
             ><strong class="data__strong"> Correo: </strong
             >luiz_fernando316@hotmail.com
-          </p>
-          <p class="data__info">
+          </a>
+          <a
+            target="_blank"
+            href="https://wa.me/message/F74B2XUM7BXCP1"
+            class="data__info"
+          >
             <i class="bi bi-telephone-fill box"></i
             ><strong class="data__strong"> Telefono: </strong>57+3026685405
-          </p>
-          <p class="data__info">
+          </a>
+          <a class="data__info">
             <i class="bi bi-geo box"></i
             ><strong class="data__strong"> Bucaramanga, </strong>Colombia
-          </p>
+          </a>
         </div>
       </section>
       <footer>
