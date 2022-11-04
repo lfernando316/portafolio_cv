@@ -502,7 +502,7 @@ h1::after{
 }
 .card {
   position: relative;
-  width: 300px;
+  width: 280px;
   height: 400px; 
   cursor: pointer;   
 }
@@ -567,6 +567,26 @@ h1::after{
   font-size: 100px;
   color: #f1f1f1;
 }
+
+/* vista mobile portafolio */
+
+@media (max-width: 400px) {
+  .card {
+    width: 150px;   
+  }
+  .img__port{
+    width: 130px;
+    height: 168px;
+  }
+  .card .back {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 3rem;
+  }
+  
+}
+
 /* css contacto desktop */
 .contact{
   display: flex;
