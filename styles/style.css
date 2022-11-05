@@ -377,7 +377,7 @@ img {
   }
   .about__p{
     font-size: 1rem;
-    width: 250px;
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 10px;
   }
@@ -684,7 +684,7 @@ input{
   .form__msg{
     font-size: 1rem;
     color: #cfd87d;
-    width: 250px;
+    width: 100%;
     text-align: justify;
     margin-bottom: 30px;
   }
